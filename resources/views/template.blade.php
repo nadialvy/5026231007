@@ -16,6 +16,12 @@
             background-color: #9de2e2;
             height: 100px;
         }
+
+        .hover-shadow:hover {
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.2s ease-in-out;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -50,7 +56,7 @@
         </ul>
     </nav>
     <br>
-    <div class="container">
+    <div class="">
         @yield('content')
     </div>
 

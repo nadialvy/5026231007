@@ -9,7 +9,7 @@
     {{-- action mengarah ke pegawai/store untuk dilakukan routing --}}
     <form action="/pegawai/store" method="post">
         {{ csrf_field() }}
-        <divx class="row">
+        <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="nama">Nama</label>
@@ -29,6 +29,6 @@
                 </div>
                 <input type="submit" value="Simpan Data" class="btn btn-primary">
             </div>
-        </divx>
+        </div>
     </form>
 @endsection

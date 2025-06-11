@@ -10,3 +10,9 @@
         sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
 }
+
+.hover-shadow:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* mirip shadow-lg */
+    transition: box-shadow 0.2s ease-in-out;
+  }
+

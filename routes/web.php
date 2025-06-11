@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\KursiController;
 use App\Http\Controllers\PegawaiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
@@ -61,5 +62,15 @@ Route::post('/pegawai/store', [PegawaiDBController::class, 'store']); //jika for
 Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
-
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+// route tugas CRUD
+Route::get('/pr-pertemuan-14/kursi', [KursiController::class, 'index']);
+Route::get('/pr-pertemuan-14/kursi/tambah', [KursiController::class, 'redirect_add']);
+Route::post('/pr-pertemuan-14/kursi/add', [KursiController::class, 'add']);
+Route::get('/pr-pertemuan-14/kursi/edit/{id}', [KursiController::class, 'edit']);
+Route::post('/pr-pertemuan-14/kursi/update',[KursiController::class, 'update']);
+Route::get('/pr-pertemuan-14/kursi/delete/{id}', [KursiController::class, 'delete']);
+Route::get('/pr-pertemuan-14/kursi/search', [KursiController::class, 'search']);
+// analytics kursi
+Route::get('/pr-pertemuan-14/kursi/analytics', [KursiController::class, 'getAnalytics']);
