@@ -6,6 +6,7 @@ use App\Http\Controllers\PegawaiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\Latihan1Controller;
 
 Route::get('/', function () {
   return view('frontend');
@@ -74,3 +75,6 @@ Route::get('/pr-pertemuan-14/kursi/delete/{id}', [KursiController::class, 'delet
 Route::get('/pr-pertemuan-14/kursi/search', [KursiController::class, 'search']);
 // analytics kursi
 Route::get('/pr-pertemuan-14/kursi/analytics', [KursiController::class, 'getAnalytics']);
+
+// tugas latihan 1
+Route::get('/latihan-1', [Latihan1Controller::class, 'index']);

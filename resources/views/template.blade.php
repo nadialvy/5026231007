@@ -12,54 +12,62 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <style>
-        .jumbotron {
-            background-color: #9de2e2;
-            height: 100px;
+        body {
+            /* background: linear-gradient(to right, #ecf3f9, #ffffff); */
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
         }
 
-        .hover-shadow:hover {
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.2s ease-in-out;
-            cursor: pointer;
+        .navbar {
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #a7e3ec;
+            padding: 2rem 1rem;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #222;
+        }
+
+        .nav-link {
+            color: #0d6efd !important;
+            margin-right: 1rem;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
         }
     </style>
+
 </head>
 
 <body>
-    <div class="jumbotron text-center mx-auto">
-        <h1>5026231007 : Nadia Lovely</h1>
+    <div class="header">
+        5026231007 : Nadia Lovely
     </div>
 
-    <nav class="navbar navbar-expand-sm bg-light">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">All Front End</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pegawai">Pegawai</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/kursi">Tugas CRUD</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">EAS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 3</a>
-            </li>
-        </ul>
+    <nav class="navbar px-4">
+        <a class="nav-link" href="/">All Front End</a>
+        <a class="nav-link" href="/pegawai">Pegawai</a>
+        <a class="nav-link" href="/pr-pertemuan-14/kursi">Tugas CRUD</a>
+        <a class="nav-link" href="#">EAS</a>
+        <a class="nav-link" href="/latihan-1">Latihan 1</a>
+        <a class="nav-link" href="#">Latihan 2</a>
+        <a class="nav-link" href="#">Latihan 3</a>
     </nav>
-    <br>
-    <div class="">
+
+    <div class="px-4 py-5">
         @yield('content')
     </div>
 
+    <footer class="text-center text-muted py-4" style="font-size: 0.85rem;">
+        © 2025 Nadia Lovely | Web Programming Final Project
+    </footer>
+
 </body>
+
 
 </html>
