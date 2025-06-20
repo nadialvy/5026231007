@@ -55,7 +55,7 @@
         <a class="nav-link" href="/">All Front End</a>
         <a class="nav-link" href="/pegawai">Pegawai</a>
         <a class="nav-link" href="/pr-pertemuan-14/kursi">Tugas CRUD</a>
-        <a class="nav-link" href="#">EAS</a>
+        <a class="nav-link" href="/eas">EAS</a>
         <a class="nav-link" href="/latihan-1">Latihan 1</a>
         <a class="nav-link" href="/karyawan">Latihan 2</a>
         <a class="nav-link" href="/karyawan-3">Latihan 3</a>

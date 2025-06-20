@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\KursiController;
+use App\Http\Controllers\MyKaryawanController;
 use App\Http\Controllers\PegawaiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DosenController;
@@ -90,3 +91,9 @@ Route::get('/karyawan-3', [KaryawanDBController::class, 'indexKaryawan']);
 Route::get('/karyawan-3/tambah', [KaryawanDBController::class, 'tambahKaryawan']);
 Route::post('/karyawan-3/store', [KaryawanDBController::class, 'storeKaryawan']);
 Route::get('/karyawan-3/hapus/{id}', [KaryawanDBController::class, 'hapusKaryawan']);
+
+// eas
+Route::get('/eas', [MyKaryawanController::class, 'index']);
+Route::get('/eas/edit/{id}', [MyKaryawanController::class, 'edit']);
+Route::post('/eas/update', [MyKaryawanController::class, 'update']);
+Route::get('/eas/view/{id}', [MyKaryawanController::class, 'view']);
